@@ -45,7 +45,7 @@ Add-Type -Name Window -Namespace Console -MemberDefinition @'
     public static extern bool ShowWindow(IntPtr hWnd, Int32 nCmdShow);
 '@;
 
-# Set the AppID for a window in PowerShell (seperate from the main script). Set icon in taskbar.
+# Set the AppID for a window in PowerShel   l (seperate from the main script). Set icon in taskbar.
 $definitionSetAppIdForWindow = @'
 using System;
 using System.Runtime.InteropServices;
@@ -290,9 +290,8 @@ function Send-KeyboardInput
 }
 
 # Function to create a new runspace.
-function New-PowerShellRunspace
+function Get-PowerShellRunspace
 {
-    [CmdletBinding(SupportsShouldProcess)]
     [OutputType([System.Management.Automation.PowerShell])]
     param
     (
@@ -685,7 +684,7 @@ function Show-Form
             $delayKey = $textBoxDelayKey.Text;
 
             # Create a new runspace.
-            $runspace = New-PowerShellRunspace;
+            $runspace = Get-PowerShellRunspace;
 
             # Create script block.
             $sendKeyScriptBlock = {
