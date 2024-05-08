@@ -17,7 +17,7 @@ Before installing the module, the following prerequisites must be fulfilled:
 
 - [ ] At least **PowerShell 5.1** installed.
 - [ ] To download the tool, you need an internet connection.
-- [ ] Only works on Windows-platform
+- [ ] Only works on a Windows-platform
 
 ###  :package: Commands
 1. To install the module run the following in a PowerShell session:
@@ -41,4 +41,4 @@ Before installing the module, the following prerequisites must be fulfilled:
 
 ## :camera: ​Screenshot
 
-![AutoTypescreenshot](assets/screenshot.png)
+![AutoTyper screenshot](assets/screenshot.png)
