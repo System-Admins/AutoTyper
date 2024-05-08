@@ -41,4 +41,4 @@ Before installing the module, the following prerequisites must be fulfilled:
 
 ## :camera: ​Screenshot
 
-![AutoTyper screenshot](assets/screenshot.png)
+![AutoTyper screenshot](assets/images/screenshot.png)
