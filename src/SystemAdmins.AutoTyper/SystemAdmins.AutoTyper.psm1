@@ -38,6 +38,13 @@ $ps1Files += ($publicPs1Files).FullName;
 # Loop through each PowerShell file.
 foreach ($ps1File in $ps1Files)
 {
+    # If file path is empty, skip.
+    if ([string]::IsNullOrEmpty($ps1File))
+    {
+        # Skip.
+        continue;
+    }
+
     # Try to dot source the file.
     try
     {
